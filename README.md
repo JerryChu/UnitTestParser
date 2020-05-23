@@ -10,7 +10,7 @@
 - 解析代码覆盖率
 - 解析增量代码覆盖率（TODO）
 - 解析个人代码覆盖率（TODO）
-- 模块分模块代码覆盖率
+- 模块分模块代码覆盖率 (TODO)
 
 ## 单元测试执行概况
 
@@ -20,7 +20,7 @@
 ruby unitTestInfo.rb --xcresult-path=path/to/xcresult_file --output-file=/path/to/output_file
 ```
 
-参考 [单元测试结果数据解析文档](./docs/UnitTestInfo.md)
+参考 [单元测试结果数据解析文档](./docs/unitTestInfo.md)
 
 ## 代码覆盖率
 
@@ -32,8 +32,8 @@ ruby targetCoverage.rb --cov-json-path=path/to/json_file --output-file=path/to/o
 
 参考 [代码覆盖率解析文档](./docs/targetCoverage.md)
 
-- 增量代码覆盖率
+## 增量代码覆盖率
 
-- 个人代码覆盖率
+## 个人代码覆盖率
 
-- 分模块代码覆盖率
+## 分模块代码覆盖率
