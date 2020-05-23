@@ -30,8 +30,8 @@ ruby targetCoverage.rb --cov-json-path=path/to/json_file --output-file=path/to/o
 我们就可以得到如下的结果：
 
 ```text
-target	        可执行代码行数	覆盖代码行数	代码覆盖率
-All     424	    313 	73.8%
-DemoTests.xctest	223 	217	    97.3%
-Demo.app	201 	96  	47.7%
+target	        可执行代码行数 覆盖代码行数  代码覆盖率
+All                 424         313       73.8%
+DemoTests.xctest    223         217       97.3%
+Demo.app            201         96        47.7%
 ```
