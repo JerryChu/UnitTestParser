@@ -17,7 +17,12 @@
 
 ```objective-c
 # resultBundleVersion 为可选参数，为了防止后续版本更新导致结果文件变化，建议加上这个参数
-xcodebuild test -workspace QQNews.xcworkspace -scheme QQNews -derivedDataPath "${BUILD_DIR}/" -destination "${SIMULATOR_PLATFORM}" -resultBundlePath "${XCRESULT_PATH}" -resultBundleVersion 3
+
+# for xcodeproj
+xcodebuild test -project Demo.xcodeproj -scheme Demo -derivedDataPath "${BUILD_DIR}/" -destination "${SIMULATOR_PLATFORM}" -resultBundlePath "${XCRESULT_PATH}" -resultBundleVersion 3
+
+# for xcworkspace
+xcodebuild test -workspace Demo.xcworkspace -scheme Demo -derivedDataPath "${BUILD_DIR}/" -destination "${SIMULATOR_PLATFORM}" -resultBundlePath "${XCRESULT_PATH}" -resultBundleVersion 3
 ```
 
 `SIMULATOR_PLATFORM`指定使用的模拟器类型，如。不同机器上可用的模拟器类型不同，如 *platform=iOS Simulator,OS=13.4,name=iPhone 11*，不同机器上可用的模拟器类型不尽相同，可以通过如下命令获取可用的模拟器列表
