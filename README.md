@@ -34,6 +34,14 @@ ruby targetCoverage.rb --cov-json-path=path/to/json_file --output-file=path/to/o
 
 ## 增量代码覆盖率
 
+### 获取增量代码
+
+使用`git diff`命令可以获取到增量代码，但是`git diff`是没法直接使用的，我们需要对diff结果进行解析，获取到新增的所有文件及代码行。
+
+参考 [diff数据解析文档](./docs/diffParser.md)
+
+### 统计增量代码覆盖率
+
 ## 个人代码覆盖率
 
 ## 分模块代码覆盖率
