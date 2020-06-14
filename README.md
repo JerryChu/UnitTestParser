@@ -42,6 +42,14 @@ ruby targetCoverage.rb --cov-json-path=path/to/json_file --output-file=path/to/o
 
 ### 统计增量代码覆盖率
 
+获取增量代码覆盖率数据。
+
+```
+ruby deltaCov.rb --xcresult-path=path/to/xcresult_file --proj-dir=./ --diff-file=path/to/diff_file --output-file=deltaCov.txt
+```
+
+参考 [增量覆盖率数据解析文档](./docs/deltaCoverage.md)
+
 ## 个人代码覆盖率
 
 ## 分模块代码覆盖率
