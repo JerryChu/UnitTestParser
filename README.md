@@ -21,6 +21,14 @@ ruby unitTestInfo.rb --xcresult-path=path/to/xcresult_file --output-file=/path/t
 
 参考 [单元测试结果数据解析文档](./docs/unitTestInfo.md)
 
+## 单元测试执行日志
+
+单元测试执行完毕后，xcresult文件会删除执行过程日志，需要通过解析xcresult文件获取日志路径，进而提取日志。
+
+```shell
+ruby unitTestLog.rb --xcresult-path=../UnitTestDemo/test.xcresult --output-path=./UnitTestLog
+```
+
 ## 代码覆盖率
 
 获取整体覆盖率以及各个target的代码覆盖率数据。
