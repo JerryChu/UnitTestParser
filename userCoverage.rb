@@ -7,7 +7,7 @@ require_relative 'trollop'
 =begin
 
  获取项目成员的代码覆盖率数据
- 适用于 Xcode 11  (https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes?language=objc)
+ 适用于 Xcode 11及以上版本  (https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes?language=objc)
 
 =end
 
