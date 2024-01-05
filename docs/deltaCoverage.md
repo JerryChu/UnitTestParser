@@ -1,19 +1,18 @@
 # 增量代码覆盖率统计
 
->  建议先阅读[单元测试结果数据解析文档](./unitTestInfo.md) 和 [代码覆盖率统计文档](./targetCoverage.md)。
-
+> 建议先阅读[单元测试结果数据解析文档](./unitTestInfo.md) 和 [代码覆盖率统计文档](./targetCoverage.md)。
 
 `增量代码覆盖率`指的就是新增代码的代码覆盖率，也就是新增代码中有多少代码被单元测试覆盖了。我们可以通过如下公式计算增量代码覆盖率
 
 ```
-deltaCov = coveredDeltaLineCount / deltaLineCount
+deltaCoverage = coveredDeltaLineCount / deltaLineCount
 ```
 
 其中，*deltaLineCount* 指的是新增代码中的**有效代码行数**，*coveredDeltaLineCount* 指的是新增代码的有效代码行中，被单元测试覆盖的行数。用后者除以前者，就得到了本次新增代码的覆盖率，也就是增量代码覆盖率。
 
 ## 使用场景
 
-增量代码覆盖率可以保证增量代码的单元测试水平，从而保证整体单元测试水平不断提升。一般情况下，我们会在如下几个场景统计增量代码覆盖率： 
+增量代码覆盖率可以保证增量代码的单元测试水平，从而保证整体单元测试水平不断提升。一般情况下，我们会在如下几个场景统计增量代码覆盖率：
 
 - 有新的 PR（Pull Request）或 MR（Merge Request）时，检测本次PR/MR的增量代码覆盖率，决定是否合入。
 - 检测不同版本之间的增量代码覆盖率，评估每个版本的增量代码单元测试水平。
@@ -26,7 +25,7 @@ deltaCov = coveredDeltaLineCount / deltaLineCount
 我们再回到增量代码覆盖率的计算公式：
 
 ```
-deltaCov = coveredDeltaLineCount / deltaLineCount
+deltaCoverage = coveredDeltaLineCount / deltaLineCount
 ```
 
 我们已经知道，*deltaLineCount* 指的是新增代码中的有效代码行数，*coveredDeltaLineCount* 指的是新增代码的有效代码行中，被单元测试覆盖的行数。  
@@ -137,7 +136,7 @@ xcrun xccov view --archive --file /path/to/file /path/to/xcresult_file
 55: 0
 ```
 
-左侧的索引就是文件的代码行索引，右侧的数字表示的是该行在单元测试中被执行的次数，其中 `*` 表示该行不是可执行代码行，比如空白行等，在进行覆盖率计算时，这些行不会被当成有效代码行，也就不会被统计进去。 
+左侧的索引就是文件的代码行索引，右侧的数字表示的是该行在单元测试中被执行的次数，其中 `*` 表示该行不是可执行代码行，比如空白行等，在进行覆盖率计算时，这些行不会被当成有效代码行，也就不会被统计进去。
 
 > 相信看到这里大家就知道增量覆盖率计算公式中的**有效代码行**是什么意思了。
 
