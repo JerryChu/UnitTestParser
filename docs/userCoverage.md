@@ -54,9 +54,9 @@
 9caa7b6b        (  jerrychu     2020-03-29      27)/// @param count 数字
 9caa7b6b        (  jerrychu     2020-03-29      28)+ (NSString *)descForCount2:(NSInteger)count;
 9caa7b6b        (  jerrychu     2020-03-29      29)
-7e08d03f        (jerrychu(褚佳义)       2020-05-01      30)// 将threshold作为参数传入，避免内部产生依赖
-7e08d03f        (jerrychu(褚佳义)       2020-05-01      31)+ (NSString *)descForCount2:(NSInteger)count withThreshold:(NSInteger)threshold;
-7e08d03f        (jerrychu(褚佳义)       2020-05-01      32)
+7e08d03f        (  jerrychu     2020-05-01      30)// 将threshold作为参数传入，避免内部产生依赖
+7e08d03f        (  jerrychu     2020-05-01      31)+ (NSString *)descForCount2:(NSInteger)count withThreshold:(NSInteger)threshold;
+7e08d03f        (  jerrychu     2020-05-01      32)
 9caa7b6b        (  jerrychu     2020-03-29      33)@end
 9caa7b6b        (  jerrychu     2020-03-29      34)
 9caa7b6b        (  jerrychu     2020-03-29      35)NS_ASSUME_NONNULL_END
